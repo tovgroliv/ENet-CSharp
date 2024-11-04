@@ -24,6 +24,15 @@ Please, read [common mistakes](https://github.com/nxrighthere/ENet-CSharp/blob/m
 
 Building
 --------
+
+```
+cd /путь/к/вашему/репозиторию/ENet-CSharp/native
+mkdir build
+cd build
+cmake .. -DCMAKE_OSX_ARCHITECTURES=arm64 -DENET_STATIC=0 -DENET_SHARED=1
+make
+```
+
 To build the native library appropriate software is required:
 
 For desktop platforms [CMake](https://cmake.org/download/) with GNU Make or Visual Studio.
